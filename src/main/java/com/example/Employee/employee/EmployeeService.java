@@ -10,8 +10,9 @@ import java.util.Optional;
 
 @Service
 public class EmployeeService {
-    @Autowired
+
     private final EmployeeRepository employeeRepository;
+    @Autowired
     public EmployeeService(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
